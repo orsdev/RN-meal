@@ -25,6 +25,7 @@ const OverviewPage = ({ route, navigation }) => {
             <FlatList
                 data={selectedMeal}
                 keyExtractor={(item) => item.id}
+                showsVerticalScrollIndicator={false}
                 renderItem={(itemData) => {
                     const { item } = itemData;
                     return (
